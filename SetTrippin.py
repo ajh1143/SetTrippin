@@ -1,5 +1,6 @@
 class SetTrippin(object):
 
+    
     def setCreator(self, preSet):
         """
             Args:  preSet: String
@@ -9,6 +10,7 @@ class SetTrippin(object):
         postSet = set(preSet.split(" "))
         return postSet
 
+    
     def setIntersection(self, set1, set2):
         """
            Args:  set1: String
@@ -22,6 +24,7 @@ class SetTrippin(object):
             print("The common words in this set include:")
             print("{}\n".format(set3))
 
+            
     def setDifferences(self, set1, set2):
         """
             Args:   set1: String
@@ -36,6 +39,7 @@ class SetTrippin(object):
             print("Set #1 Unique Words : {}".format(set3[0]))
             print("Set #2 Unique Words : {}".format(set3[1]))
 
+            
     def removeDelimiters(self, inputString):
         """
             Args:   inputString: String
@@ -49,6 +53,7 @@ class SetTrippin(object):
         outputString = "".join(outputString)
         return outputString
 
+    
 if __name__ == '__main__':
     run = SetTrippin()
     practiceSet1 = "Hell@o m,y n,ame is F,,red"
