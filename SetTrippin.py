@@ -3,7 +3,7 @@ class SetTrippin(object):
     def setCreator(self, preSet):
         """
             Args:  preSet: String
-            Return: List a, as a set
+            Return: postSet: Set of processed 'preSet' string
         """
         preSet = self.removeDelimiters(preSet)
         postSet = set(preSet.split(" "))
