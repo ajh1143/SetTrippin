@@ -1,6 +1,5 @@
 class SetTrippin(object):
 
-    
     def setCreator(self, preSet):
         """
             Args:  preSet: String
@@ -10,7 +9,6 @@ class SetTrippin(object):
         postSet = set(preSet.split(" "))
         return postSet
 
-    
     def setIntersection(self, set1, set2):
         """
            Args:  set1: String
@@ -21,10 +19,9 @@ class SetTrippin(object):
         if not set3 or '' in set3:
             print("There are no points of intersection.\n")
         else:
-            print("The common words in this set include:")
+            print("\nThe common words in this set include:")
             print("{}\n".format(set3))
 
-            
     def setDifferences(self, set1, set2):
         """
             Args:   set1: String
@@ -39,7 +36,6 @@ class SetTrippin(object):
             print("Set #1 Unique Words : {}".format(set3[0]))
             print("Set #2 Unique Words : {}".format(set3[1]))
 
-            
     def removeDelimiters(self, inputString):
         """
             Args:   inputString: String
@@ -47,13 +43,18 @@ class SetTrippin(object):
         """
         delimiters = [",", ".", "!", "?", "/", "&", "-", ":", ";", "@", "'", "..."]
         outputString = []
+        garbage = []
         for each in inputString:
             if each not in delimiters:
                outputString.append(each)
+            else:
+                garbage.append(each)
+        print("Delimiters Removed from this set:")
+        print("{}".format(garbage))
+
         outputString = "".join(outputString)
         return outputString
 
-    
 if __name__ == '__main__':
     run = SetTrippin()
     practiceSet1 = "Hell@o m,y n,ame is F,,red"
