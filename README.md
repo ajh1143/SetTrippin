@@ -40,7 +40,7 @@ def removeDelimiters(self, inputString):
     return outputString
 ```
 
-Find amd format reports about the intersections and differences between unique sets
+Find and format reports about the intersections and differences between unique sets
 
 ```Python3  
 
@@ -59,7 +59,7 @@ def setIntersection(self, set1, set2):
 
 ```
 
-Find amd format reports about the intersections and differences between unique sets
+Find and format reports about the intersections and differences between unique sets
 
 ```Python3
 
